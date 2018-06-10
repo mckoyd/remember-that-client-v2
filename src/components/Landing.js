@@ -3,7 +3,7 @@ import { LandingTopNav } from './LandingTopNav';
 import LoginForm from './LandingLoginForm';
 
 export const Landing = () => (
-  <div>
+  <div role='main'>
     <LandingTopNav />
     <LoginForm />
   </div>
