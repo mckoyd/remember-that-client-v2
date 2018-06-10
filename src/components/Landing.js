@@ -4,9 +4,11 @@ import LoginForm from './LandingLoginForm';
 import { LandingHeader } from './LandingHeader';
 
 export const Landing = () => (
-  <div role='main'>
-    <LandingTopNav />
-    <LoginForm />
-    <LandingHeader />
+  <div>
+    <LandingTopNav role='navigation'/>
+    <LandingHeader role='banner'/>
+    <div role='main'>
+      <LoginForm />
+    </div>
   </div>
 );
