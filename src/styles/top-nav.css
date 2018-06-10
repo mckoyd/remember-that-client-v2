@@ -1,0 +1,8 @@
+.nav-bar {
+  background-color: #0B110E;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  font-size: 1.3em;
+  width: 100%;
+}

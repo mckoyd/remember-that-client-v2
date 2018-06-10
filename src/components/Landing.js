@@ -1,5 +1,8 @@
 import React from 'react';
+import { LandingTopNav } from './LandingTopNav';
 
 export const Landing = () => (
-  <h1>Beginning Landing Page</h1>
+  <div>
+    <LandingTopNav />
+  </div>
 );
