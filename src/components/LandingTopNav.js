@@ -1,5 +1,5 @@
 import React from 'react';
-import { LandingLTopNav } from './LandingLTopNav';
+import LandingLTopNav from './LandingLTopNav';
 import LandingRTopNav from './LandingRTopNav';
 import '../styles/top-nav.css';
 

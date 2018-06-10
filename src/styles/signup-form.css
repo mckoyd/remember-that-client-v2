@@ -10,39 +10,40 @@
   padding: 2em 0;
   visibility: hidden;
 }
-#login-form .modal-content {
-  background-color: #424141;
+#signup-form .modal-content {
+  background-color: #F1FAEE;
   position: relative;
   padding: 0;
   outline: 0;
   width: 80%;
   margin: 0 auto;
   border-radius: 5%;
+  color: #424141;
 }
 .modal.visible {
   transform: translateX(0);
   box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
   visibility: visible;
 }
-#login-form .home-btn {
+#signup-form .home-btn {
   line-height: 1;
   width: 35%;
   font-size: 1em;
-  color: #F1FAEE;
+  color: #424141;
   font-weight: bold;
   text-align: center;
-  background-color: #0B110E;
+  background-color: #F1FAEE;
   border-radius: 10%;
   margin: 1em;
   padding: 0.5em;
   text-transform: uppercase;
   cursor: pointer;
 }
-#login-form .home-btn:hover {
-  background-color: #F1FAEE;
-  color: #0B110E;
+#signup-form .home-btn:hover {
+  background-color: #0B110E;
+  color: #F1FAEE;
 }
-#login-form fieldset {
+#signup-form fieldset {
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -59,16 +60,16 @@ fieldset legend {
   text-align: center;
   border: 1px solid #ccc;
   width: 85%;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
-#login-form #login-btn {
+#signup-form #signup-btn {
   line-height: 1;
   width: 95%;
   font-size: 1em;
-  color: #F1FAEE;
+  color: #0B110E;
   font-weight: bold;
   text-align: center;
-  background-color: #0B110E;
+  background-color: #F1FAEE;
   border-radius: 10%;
   margin: 1.8em auto 0.9em auto;
   padding: 0.8em;
@@ -76,26 +77,26 @@ fieldset legend {
   cursor: pointer;
 }
 
-#login-form #login-btn:hover {
-  background-color: #F1FAEE;
-  color: #0B110E;
+#signup-form #signup-btn:hover {
+  background-color: #0B110E;
+  color: #F1FAEE;
 }
 
-#login-form p {
+#signup-form p {
   text-align: center;
   padding-bottom: 1em;
 }
 
-#login-form span:hover {
-  background-color: #F1FAEE;
-  color: #0B110E;
+#signup-form span:hover {
+  background-color: #0B110E;
+  color: #F1FAEE;
   cursor: pointer;
   border-radius: 10%;
   padding: 0.5em;
 }
 
 @media screen and (min-width: 600px) {
-  #login-form .modal-content {
+  #signup-form .modal-content {
     width: 70%;
   }
   .input-box {
@@ -104,26 +105,26 @@ fieldset legend {
 }
 
 @media screen and (min-width: 800px) {
-  #login-form .modal-content {
+  #signup-form .modal-content {
     width: 60%;
   }
-  #login-form .home-btn {
+  #signup-form .home-btn {
     font-size: 1.5em;
   }
   fieldset legend {
     font-size: 2em;
   }
-  #login-form fieldset label {
+  #signup-form fieldset label {
     padding: 1em 0 0.5em 0;
     font-size: 1.8em;
   }
   .input-box {
     font-size: 1.8em;
   }
-  #login-form #login-btn {
+  #signup-form #signup-btn {
     font-size: 1.5em;
   }
-  #login-form p {
+  #signup-form p {
     font-size: 1.3em
   }
 }

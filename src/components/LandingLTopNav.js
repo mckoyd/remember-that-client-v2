@@ -1,14 +1,18 @@
 import React from 'react';
+import {connect} from 'react-redux';
 import '../styles/landing-left-nav.css';
+import { toggleLoginModal, toggleSignupModal } from '../actions';
 
 const logo = require('../images/rememberThatIcon.ico');
-export const LandingLTopNav = () => (
+export const LandingLTopNav = props => (
   <div className='left-nav'>
     <img src={logo}
       alt='A post-it note with `Remember THAT!` written in bold'
-      onClick={() => console.log('`Remember THAT!` logo link ready.')} />
-    <p onClick={() => console.log('`Remember THAT!` text link ready.')}>
+      onClick={() => props.dispatch(toggleLoginModal())} />
+    <p onClick={() => props.dispatch(toggleSignupModal())}>
       RememberTHAT!
     </p>
   </div>
 );
+
+export default connect()(LandingLTopNav);

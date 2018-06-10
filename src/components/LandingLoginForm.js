@@ -24,11 +24,11 @@ export const LoginForm = props => (
           <label htmlFor='login-username' aria-label='Username'>So What Do We Call You?</label>
           <Field type='text' component='input'
             name='login-username' id='login-username'
-            className='input-box' placeholder='enter your username' />
+            className='input-box' placeholder='enter your username' required/>
           <label htmlFor="login-password" aria-label='Password'>And What Is Your Password?</label>
           <Field type='password' component='input'
             name='login-password' id='login-password'
-            className='input-box' placeholder='enter your password' />
+            className='input-box' placeholder='enter your password' required/>
           <button type='submit' name='login-btn' aria-label='Login Button' id='login-btn'>Start Remembering!</button>
           <hr />
         </fieldset>
