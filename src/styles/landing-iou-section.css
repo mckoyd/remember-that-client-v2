@@ -4,11 +4,9 @@
   display: flex;
   flex-direction: column;
 }
-
 .landing-image {
   object-fit: cover;
   width: 100vw;
-  height: 50vh;
 }
 article .landing-iou {
   order: 2;
@@ -16,6 +14,7 @@ article .landing-iou {
   text-align: left;
   padding: 4em;
   width: 100vw;
+  height: 50vh;
 }
 .landing-iou header h2 {
   font-size: 2.35em;
@@ -24,7 +23,6 @@ article .landing-iou {
   line-height: 1.25;
   margin: 0 0 0.5em 0;
 }
-
 .landing-iou header p {
   font-size: 1em;
   font-style: italic;
@@ -42,12 +40,13 @@ article .landing-iou {
   border-radius: 10%;
   padding: 0.2em;
 }
-
 @media screen and (min-width: 600px){
   article .landing-iou {
-    padding: 3em;
+    padding: 2.3em;
     width: 50vw;
-    height: 50vh;
+  }
+  .landing-iou header h2 {
+    font-size: 1.8em;
   }
   .landing-section {
     background-color: #F1FAEE;
@@ -61,10 +60,30 @@ article .landing-iou {
   }
   .landing-iou header p {
     font-size: 1.3em;
+    padding: 0.2em 0;
+  }
+  .landing-iou p {
+    font-size: 1em;
+    margin: 0 0 0.9em 0;
+    line-height: 1.7;
+  }
+  .landing-iou span:hover {
+    padding: 0.1em;
   }
 }
-
 @media screen and (min-width: 800px){
+  article .landing-iou {
+    padding: 2em;
+  }
+  .landing-iou header h2 {
+    font-size: 2.8em;
+  }
+  .landing-iou header p {
+    font-size: 2em;
+  }
+  .landing-iou p {
+    margin: 0 0 1em 0;
+  }
   .landing-section {
     background-color: #F1FAEE;
     color: #444;
@@ -75,7 +94,7 @@ article .landing-iou {
     width: 50vw;
     height: 50vh;
   }
-  .landing-iou header p {
-    font-size: 1.3em;
+  .landing-iou span:hover {
+    padding: 0.08em;
   }
 }

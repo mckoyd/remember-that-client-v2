@@ -1,8 +1,8 @@
 import React from 'react';
-import { LandingTopNav } from './LandingTopNav';
+import {LandingTopNav} from './LandingTopNav';
+import {LandingHeader} from './LandingHeader';
+import {LandingIOUSection} from './LandingIOUSection';
 import LoginForm from './LandingLoginForm';
-import { LandingHeader } from './LandingHeader';
-import { LandingIOUSection } from './LandingIOUSection';
 import SignupForm from './LandingSignupForm';
 
 export const Landing = () => (

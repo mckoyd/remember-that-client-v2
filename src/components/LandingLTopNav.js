@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {toggleLoginModal, toggleSignupModal} from '../actions';
 import '../styles/landing-left-nav.css';
-import { toggleLoginModal, toggleSignupModal } from '../actions';
 
 const logo = require('../images/rememberThatIcon.ico');
 export const LandingLTopNav = props => (

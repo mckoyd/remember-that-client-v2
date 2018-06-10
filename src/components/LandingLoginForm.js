@@ -1,7 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import {Field, reduxForm, focus} from 'redux-form';
-import { toggleLoginModal } from '../actions';
+import {toggleLoginModal} from '../actions';
 import '../styles/login-form.css';
 
 const mapStateToProps = state => ({

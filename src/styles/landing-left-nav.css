@@ -8,14 +8,12 @@
   margin: 1em 0 1em 1em;
   cursor: pointer;
 }
-
 .left-nav p {
   align-self: center;
   margin-left: 5px;
   cursor: pointer;
   font-size: 0.8em;
 }
-
 @media screen and (min-width: 600px){
   .left-nav {
     font-size: 1.3em;
@@ -25,12 +23,10 @@
     height: 64px;
   }
 }
-
 @media screen and (min-width: 800px){
   .left-nav {
     font-size: 1.5em;
   }
-
   .left-nav img {
     margin: 1.2em 0 1.2em 1.2em;
   }

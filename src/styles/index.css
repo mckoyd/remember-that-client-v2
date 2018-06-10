@@ -1,7 +1,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
 body {
   position: relative;
   color: #f1faee;
@@ -13,5 +12,4 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-
 }

@@ -1,18 +1,15 @@
 .right-nav {
   margin: 0.5em;
 }
-
 .right-nav p {
   padding: 0.2em;
   cursor: pointer;
   font-size: 0.8em;
 }
-
 .right-nav p:hover {
   background-color: #0095DF;
   border-radius: 10%;
 }
-
 @media screen and (min-width: 600px){
   .right-nav {
     margin: 1em;
@@ -20,12 +17,10 @@
     align-items: center;
     font-size: 1.3em;
   }
-
   .right-nav p {
     padding: 0.5em;
   }
 }
-
 @media screen and (min-width: 800px){
   .right-nav {
     margin: 1.2em;

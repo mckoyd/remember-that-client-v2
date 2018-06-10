@@ -75,17 +75,14 @@ fieldset legend {
   text-transform: uppercase;
   cursor: pointer;
 }
-
 #login-form #login-btn:hover {
   background-color: #F1FAEE;
   color: #0B110E;
 }
-
 #login-form p {
   text-align: center;
   padding-bottom: 1em;
 }
-
 #login-form span:hover {
   background-color: #F1FAEE;
   color: #0B110E;
@@ -93,7 +90,6 @@ fieldset legend {
   border-radius: 10%;
   padding: 0.5em;
 }
-
 @media screen and (min-width: 600px) {
   #login-form .modal-content {
     width: 70%;
@@ -102,7 +98,6 @@ fieldset legend {
     font-size: 1.5em;
   }
 }
-
 @media screen and (min-width: 800px) {
   #login-form .modal-content {
     width: 60%;
