@@ -15,6 +15,7 @@ article .landing-iou {
   width: 100%;
   text-align: left;
   padding: 4em;
+  width: 100vw;
 }
 .landing-iou header h2 {
   font-size: 2.35em;
@@ -34,8 +35,20 @@ article .landing-iou {
 .landing-iou p {
   margin: 0 0 2em 0;
 }
+.landing-iou span:hover {
+  background-color: #276d9c;
+  color: #F1FAEE;
+  cursor: pointer;
+  border-radius: 10%;
+  padding: 0.2em;
+}
 
 @media screen and (min-width: 600px){
+  article .landing-iou {
+    padding: 3em;
+    width: 50vw;
+    height: 50vh;
+  }
   .landing-section {
     background-color: #F1FAEE;
     color: #444;
@@ -52,5 +65,17 @@ article .landing-iou {
 }
 
 @media screen and (min-width: 800px){
-  
+  .landing-section {
+    background-color: #F1FAEE;
+    color: #444;
+    display: flex;
+    flex-direction: row;
+  }
+  .landing-image {
+    width: 50vw;
+    height: 50vh;
+  }
+  .landing-iou header p {
+    font-size: 1.3em;
+  }
 }
