@@ -1,8 +1,9 @@
 export const normalizeResponseErrors = res => {
   if (!res.ok) {
+    console.log(res);
     if (
-      res.headers.has('content-type') &&
-          res.headers.get('content-type').startsWith('application/json')
+      res.headers.has('Content-Type') &&
+          res.headers.get('Content-Type').startsWith('application/json')
     ) {
       return res.json().then(err => Promise.reject(err));
     }

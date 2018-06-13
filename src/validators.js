@@ -12,4 +12,6 @@ export const required = value => value ? undefined: 'This is a required field.',
   
   matches = field => (value, allValues) => 
     field in allValues && value.trim() === allValues[field].trim() ? 
-      undefined : 'Fields do not match. Please try again.';
+      undefined : 'Fields do not match. Please try again.',
+  
+  email = value => /^\S+@\S+$/.test(value) ? undefined : 'Must be a valid email address';

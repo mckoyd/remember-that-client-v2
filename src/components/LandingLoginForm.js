@@ -13,7 +13,7 @@ const mapStateToProps = state => ({
 
 export class LoginForm extends React.Component{
   render(){
-    console.log(this.props);
+    console.log(this.props.error);
     return(
       <div id='login-form'
         className={`modal${this.props.loginModal ? ' visible' : ''}`}
@@ -24,9 +24,11 @@ export class LoginForm extends React.Component{
           <button className='home-btn' aria-label='close'
             onClick={() => this.props.dispatch(toggleLoginModal())}>go back</button>
           <form onSubmit={this.props.handleSubmit(values => {
-            this.props.dispatch(login(values.loginUsername, values.loginPassword));
-            this.props.reset();
-            this.props.dispatch(toggleLoginModal());
+            const loginPromise = this.props.dispatch(login(values.loginUsername, values.loginPassword))
+              .catch(err => console.log(err));
+            // this.props.reset();
+            // this.props.dispatch(toggleLoginModal());
+            return loginPromise;
           })}>
             <fieldset>
               <legend aria-label='Log In Here'>LOG IN HERE</legend>
@@ -55,6 +57,6 @@ export class LoginForm extends React.Component{
 }
 
 export default connect(mapStateToProps)(reduxForm({
-  form: 'loginForm',
+  form: 'login',
   onSubmitFail: (errors, dispatch) => dispatch(focus('login-username', 'login-password'))
 })(LoginForm));
