@@ -1,0 +1,23 @@
+.dashboard-right-nav {
+  display: flex;
+  align-items: center;
+}
+.dashboard-right-nav a {
+  text-decoration: none;
+  color: #F1FAEE;
+  margin: 0 10px;
+}
+.menu-icon {
+  cursor: pointer;
+}
+.menu-icon div {
+  width: 1.5em;
+  height: 0.2em;
+  background-color: #F1FAEE;
+  margin: 5px 10px;
+  transition: 0.4s;
+}
+
+@media screen and (min-width: 600px) {
+
+}

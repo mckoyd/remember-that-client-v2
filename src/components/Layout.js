@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Route, withRouter} from 'react-router-dom';
 import Landing from './Landing';
-import IOUDashboard from './IOUDashboard';
+import Dashboard from './Dashboard';
 
 import {refreshAuthToken} from '../actions/auth';
 
@@ -36,7 +36,7 @@ export class Layout extends React.Component{
     return(
       <div>
         <Route exact path='/' component={Landing} />
-        <Route exact path='/dashboard' component={IOUDashboard} />
+        <Route exact path='/dashboard' component={Dashboard} />
       </div>
     );
   }

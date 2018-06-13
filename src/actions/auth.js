@@ -40,10 +40,8 @@ const storeAuthInfo = (authToken, dispatch) => {
   saveAuthToken(authToken);
 };
 
-export const login = (username, password) => (dispatch, getState) => {
+export const login = (username, password) => dispatch => {
   dispatch(authRequest());
-  const closeModal = getState().main.modals.loginModal;
-  console.log(closeModal);
   return (
     fetch(`${API_BASE_URL}/auth/login`, {
       method: 'POST',

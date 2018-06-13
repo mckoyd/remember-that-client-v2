@@ -13,7 +13,6 @@ const mapStateToProps = state => ({
 
 export class LoginForm extends React.Component{
   render(){
-    console.log(this.props.error);
     let error;
     if (this.props.error){
       error = <div className="form-error">{this.props.error}</div>;
@@ -26,11 +25,10 @@ export class LoginForm extends React.Component{
         aria-describedby='login-form'>
         <div className='modal-content'>
           <button className='home-btn' aria-label='close'
-            onClick={() => this.props.dispatch(toggleLoginModal())}>go back</button>
+            onClick={() => {this.props.reset(); this.props.dispatch(toggleLoginModal());}}>go back</button>
           <form onSubmit={this.props.handleSubmit(values => {
             const loginPromise = this.props.dispatch(login(values.loginUsername, values.loginPassword));
-            if (!this.props.error) return this.props.dispatch(toggleLoginModal()); 
-            return loginPromise;
+            return loginPromise.then(() => (!this.props.error) ? this.props.dispatch(toggleLoginModal()): undefined);
           })}>
             <fieldset>
               <legend aria-label='Log In Here'>LOG IN HERE</legend>

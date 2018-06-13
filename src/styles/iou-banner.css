@@ -1,0 +1,26 @@
+
+.iou-banner img {
+  object-fit: cover;
+  width: 100vw;
+  height: 50vh;
+}
+.iou-banner h2{
+  background-color: #0e5f4c;
+  width: 100vw;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 0.3em;
+}
+
+@media screen and (min-width: 800px){
+  .iou-banner img {
+    object-fit: cover;
+    width: 100vw;
+    height: 65vh;
+  }
+  .iou-banner h2{
+    white-space: pre-line;
+    text-align:center;
+    width: 1em;
+  }
+}
