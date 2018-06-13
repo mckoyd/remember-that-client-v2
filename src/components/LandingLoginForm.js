@@ -14,6 +14,10 @@ const mapStateToProps = state => ({
 export class LoginForm extends React.Component{
   render(){
     console.log(this.props.error);
+    let error;
+    if (this.props.error){
+      error = <div className="form-error">{this.props.error}</div>;
+    }
     return(
       <div id='login-form'
         className={`modal${this.props.loginModal ? ' visible' : ''}`}
@@ -24,22 +28,21 @@ export class LoginForm extends React.Component{
           <button className='home-btn' aria-label='close'
             onClick={() => this.props.dispatch(toggleLoginModal())}>go back</button>
           <form onSubmit={this.props.handleSubmit(values => {
-            const loginPromise = this.props.dispatch(login(values.loginUsername, values.loginPassword))
-              .catch(err => console.log(err));
-            // this.props.reset();
-            // this.props.dispatch(toggleLoginModal());
+            const loginPromise = this.props.dispatch(login(values.loginUsername, values.loginPassword));
+            if (!this.props.error) return this.props.dispatch(toggleLoginModal()); 
             return loginPromise;
           })}>
             <fieldset>
               <legend aria-label='Log In Here'>LOG IN HERE</legend>
               <hr />
+              {error}
               <label htmlFor='loginUsername' aria-label='Username'>So What Do We Call You?</label>
-              <Field type='text' component={'input'}
+              <Field type='text' component={LandingInput}
                 name='loginUsername' id='login-username'
                 className='input-box' placeholder='enter your username' 
                 validate={[required, nonEmpty]}/>
               <label htmlFor="loginPassword" aria-label='Password'>And What Is Your Password?</label>
-              <Field type='password' component='input'
+              <Field type='password' component={LandingInput}
                 name='loginPassword' id='login-password'
                 className='input-box' placeholder='enter your password' 
                 validate={[required, nonEmpty]}/>

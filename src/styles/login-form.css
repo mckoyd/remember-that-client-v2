@@ -57,10 +57,20 @@ fieldset legend {
   margin: 0.5em auto 0.9em auto; 
   border-radius: 10px;
   text-align: center;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   width: 85%;
   font-size: 1.2em;
+ 
 }
+.form-error {
+  border: 3px dashed red;
+  font-size: 1em;
+  padding: 0.3em;
+  text-transform: uppercase;
+  width: 80%;
+  margin: 0 auto;
+}
+
 #login-form #login-btn {
   line-height: 1;
   width: 95%;

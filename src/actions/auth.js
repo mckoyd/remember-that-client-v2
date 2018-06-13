@@ -40,8 +40,10 @@ const storeAuthInfo = (authToken, dispatch) => {
   saveAuthToken(authToken);
 };
 
-export const login = (username, password) => dispatch => {
+export const login = (username, password) => (dispatch, getState) => {
   dispatch(authRequest());
+  const closeModal = getState().main.modals.loginModal;
+  console.log(closeModal);
   return (
     fetch(`${API_BASE_URL}/auth/login`, {
       method: 'POST',
@@ -57,7 +59,9 @@ export const login = (username, password) => dispatch => {
   // errors which follow a consistent format
       .then(res => normalizeResponseErrors(res))
       .then(res => res.json())
-      .then(({authToken}) => storeAuthInfo(authToken, dispatch))
+      .then(({authToken}) => {
+        storeAuthInfo(authToken, dispatch);
+      })
       .catch(err => {
         console.log(err);
         const {code} = err;

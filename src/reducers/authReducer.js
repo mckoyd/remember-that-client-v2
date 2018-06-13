@@ -9,7 +9,7 @@ const initState = {
   authToken: null, 
   currentUser: null, 
   loading: false, 
-  error: null
+  error: null,
 };
 
 export default (state=initState, action) => {
