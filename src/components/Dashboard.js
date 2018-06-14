@@ -6,6 +6,7 @@ import { IOUBanner } from './IOUBanner';
 import IOUTotal from './IOUTotal';
 import IOUTable from './IOUTable';
 import IOUAddForm from './IOUAddForm';
+import { UOMeBanner } from './UOMeBanner';
 import requiresLogin from './RequiresLogin';
 
 import { fetchIous } from '../actions/ious';
@@ -37,6 +38,7 @@ export class Dashboard extends React.Component{
           <IOUTable />
         </div>
         <IOUAddForm />
+        <UOMeBanner />
       </div>
     );
   }
