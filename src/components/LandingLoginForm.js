@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Field, reduxForm, focus} from 'redux-form';
 import LandingInput from '../components/LandingInput';
-import {toggleLoginModal} from '../actions';
+import {toggleLoginModal, toggleSignupModal} from '../actions';
 import {login} from '../actions/auth';
 import {required, nonEmpty} from '../validators';
 import '../styles/login-form.css';
@@ -25,7 +25,9 @@ export class LoginForm extends React.Component{
         aria-describedby='login-form'>
         <div className='modal-content'>
           <button className='home-btn' aria-label='close'
-            onClick={() => {this.props.reset(); this.props.dispatch(toggleLoginModal());}}>go back</button>
+            onClick={() => {
+              this.props.reset(); this.props.dispatch(toggleLoginModal());
+            }}>go back</button>
           <form onSubmit={this.props.handleSubmit(values => {
             const loginPromise = this.props.dispatch(login(values.loginUsername, values.loginPassword));
             return loginPromise.then(() => (!this.props.error) ? this.props.dispatch(toggleLoginModal()): undefined);
@@ -50,7 +52,9 @@ export class LoginForm extends React.Component{
               <hr />
             </fieldset>
           </form>
-          <p>Not a member, sign up <span>here</span></p>
+          <p>Not a member, sign up <span onClick={() => 
+          {this.props.dispatch(toggleSignupModal()); 
+            this.props.dispatch(toggleLoginModal());}}>here</span></p>
         </div>
       </div>
     );

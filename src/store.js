@@ -3,13 +3,15 @@ import thunk from 'redux-thunk';
 import {reducer as formReducer} from 'redux-form';
 import mainReducer from './reducers/index';
 import authReducer from './reducers/authReducer';
+import iouReducer from './reducers/iouReducer';
 import {setAuthToken, refreshAuthToken} from './actions/auth';
 import {loadAuthToken} from './local-storage';
 
 const rootReducer = combineReducers({
   main: mainReducer,
   form: formReducer,
-  auth: authReducer
+  auth: authReducer,
+  ious: iouReducer,
 });
 
 const store = createStore(rootReducer,

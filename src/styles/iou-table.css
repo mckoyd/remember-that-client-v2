@@ -1,0 +1,73 @@
+.iou-table {
+  height: 28vh;
+  overflow-y: auto;
+  background-color: #F1FAEE;
+  padding: 1em;
+}
+
+.iou-table::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0.7em;
+}
+
+.iou-table::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(25, 158, 127, .5);
+  -webkit-box-shadow: 0 0 1px rgba(13, 93, 74, .5);
+  box-shadow: 0 0 1px rgba(13, 93, 74, .5);
+}
+
+table {
+  width: 100%;
+  color: rgb(16, 110, 88);
+}
+
+.iou-header th{
+  padding: 2px;
+  font-size: 1.7em;
+  width: 50%;
+}
+
+.iou-header {
+  border-bottom: 1px dashed black;
+  /* width: 100%;   */
+}
+
+td:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+table tr {
+  margin-left: 10px;
+}
+
+table td {
+  padding: 5px;
+  font-size: 1.3em;
+}
+
+.iou-details-btn, .delete-btn {
+  text-align: right;
+  color: #F1FAEE;
+  border-radius: 100px;
+  margin: 2px 10px;
+  padding: 0.5em 1em;
+  font-size: 0.7em;
+}
+
+.iou-details-btn {
+  background-color: #199e7f;
+  margin-bottom: 4px;
+}
+
+.delete-btn {
+  background-color: #c41d1d;
+  margin-top: 6px;
+}
+
+@media screen and (min-width: 600px) {
+  .iou-table {
+    width: 50%;
+  }
+}

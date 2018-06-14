@@ -1,7 +1,7 @@
 import { FETCH_IOUS_SUCCESS, 
   TOGGLE_IOU_ADD_FORM, 
   POST_IOU_SUCCESS, 
-  DELETE_IOU_SUCCESS } from '../actions/iouActions';
+  DELETE_IOU_SUCCESS } from '../actions/ious';
 
 const initState = {
   modalFormView: false,

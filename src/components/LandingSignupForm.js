@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Field, reduxForm, focus} from 'redux-form';
 import LandingInput from '../components/LandingInput';
-import {toggleSignupModal} from '../actions';
+import {toggleSignupModal, toggleLoginModal} from '../actions';
 import {registerUser} from '../actions/user';
 import {login} from '../actions/auth';
 import '../styles/signup-form.css';
@@ -72,7 +72,9 @@ export class SignupForm extends React.Component{
               <hr />
             </fieldset>
           </form>
-          <p>Already a member, log in <span>here</span></p>
+          <p>Already a member, log in <span onClick={() => 
+          {this.props.dispatch(toggleSignupModal()); 
+            this.props.dispatch(toggleLoginModal());}}>here</span></p>
         </div>
       </div>
     );

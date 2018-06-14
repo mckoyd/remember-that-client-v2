@@ -10,7 +10,7 @@ const mapStateToProps = state => ({
 export const DashboardRTopNav = props => {
   if (!props.dispatch) return <h1>UNCONNECTED</h1>;
   return(
-    <div className="right-nav">
+    <div className="dashboard-right-nav">
       <div className="menu-icon" 
         onClick={() => props.dispatch(toggleSideNav())}>
         <div></div>

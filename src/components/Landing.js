@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
 import {LandingTopNav} from './LandingTopNav';
 import {LandingHeader} from './LandingHeader';
-import {LandingIOUSection} from './LandingIOUSection';
+import LandingIOUSection from './LandingIOUSection';
 import LoginForm from './LandingLoginForm';
 import SignupForm from './LandingSignupForm';
 

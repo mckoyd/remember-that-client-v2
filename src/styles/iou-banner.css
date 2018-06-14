@@ -8,19 +8,48 @@
   background-color: #0e5f4c;
   width: 100vw;
   text-align: center;
-  font-size: 1.3em;
-  padding: 0.3em;
+  font-size: 4em;
+  padding: 0.5em;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+@media screen and (min-width: 600px){
+  .iou-banner div {
+    display: flex;
+  }
+  .iou-banner img {
+    object-fit: cover;
+    width: 90vw;
+    height: 70vh;
+  }
+  .iou-banner h2{
+    text-align:center;
+    font-size: 4em;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    /* padding: 0; */
+    font-family: 'Gloria Hallelujah', cursive;
+    line-height: 1;
+    width: 10vw;
+  }
 }
 
 @media screen and (min-width: 800px){
-  .iou-banner img {
+  /* .iou-banner {
+    display: flex;
+  } */
+  /* .iou-banner img {
     object-fit: cover;
-    width: 100vw;
-    height: 65vh;
-  }
-  .iou-banner h2{
+    width: 90vw;
+    height: 70vh;
+  } */
+  /* .iou-banner h2{
     white-space: pre-line;
     text-align:center;
-    width: 1em;
-  }
+    font-size: 4em;
+    letter-spacing: 200px;
+    line-height: 2;
+    width: 10vw;
+    height: 70vh;
+  } */
 }
