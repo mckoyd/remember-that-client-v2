@@ -1,0 +1,1 @@
+export REACT_APP_API_BASE_URL=https://remember-that-server.herokuapp.com/api && npm run build && netlify deploy -p ./build -t 48eff0e14d2b3e69b070a4617ca33879b48038ba091a1197c2c2cd321a08d8df -s a99c50f4-11d7-465b-886c-293884d70a82

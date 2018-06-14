@@ -40,7 +40,7 @@ export class DashboardSideNav extends React.Component{
                 this.props.dispatch(toggleSideNav());
                 this.props.history.push('/');
               }
-              }>LOG OUT {this.props.username}
+              }>LOG OUT <br />{this.props.username}
             </a>
           </li>
         </ul>

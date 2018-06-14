@@ -61,7 +61,6 @@ export const login = (username, password) => dispatch => {
         storeAuthInfo(authToken, dispatch);
       })
       .catch(err => {
-        console.log(err);
         const {code} = err;
         const message =
                     code === 401
@@ -70,7 +69,6 @@ export const login = (username, password) => dispatch => {
         dispatch(authError(err));
         // Could not authenticate, so return a SubmissionError for Redux
         // Form
-        console.log(message);
         return Promise.reject(new SubmissionError({
           _error: message
         }));

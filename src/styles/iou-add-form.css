@@ -92,3 +92,24 @@ fieldset label {
   margin: 10px auto;
   padding: 5px;
 }
+
+@media screen and (min-width: 600px) {
+  #iou-add-form .modal-content {
+    width: 65%;
+    padding: 1.2em;
+  }
+  #iou-add-form #iou-home-btn {
+    width: 26%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #iou-add-form .modal-content {
+    background-color: rgb(17, 117, 94);
+    position: relative;
+  }
+
+  #iou-add-form .modal-content {
+    width: 50%;
+  }
+}
