@@ -4,14 +4,19 @@ import {reducer as formReducer} from 'redux-form';
 import mainReducer from './reducers/index';
 import authReducer from './reducers/authReducer';
 import iouReducer from './reducers/iouReducer';
+import uomeReducer from './reducers/uomeReducer';
+import receiptReducer from './reducers/receiptReducer';
 import {setAuthToken, refreshAuthToken} from './actions/auth';
 import {loadAuthToken} from './local-storage';
+
 
 const rootReducer = combineReducers({
   main: mainReducer,
   form: formReducer,
   auth: authReducer,
   ious: iouReducer,
+  uomes: uomeReducer,
+  receipts: receiptReducer
 });
 
 const store = createStore(rootReducer,

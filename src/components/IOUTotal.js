@@ -17,7 +17,7 @@ export const IOUTotal = props => {
           `You currently owe $${props.iouTotal.toLocaleString(undefined,
             {'minimumFractionDigits':2,'maximumFractionDigits':2})}`
           : 'You\'re in the clear.'}<br />
-        {props.iouNames.length > 0 ? `to ${props.iouNames.length} people.` 
+        {props.iouNames.length > 0 ? `to ${props.iouNames.length} ${props.iouNames.length>1 ? 'people':'person'}.` 
           : 'Unless you remember something we don\'t'}<br />
         <button type='button' 
           name='add-form-btn' 

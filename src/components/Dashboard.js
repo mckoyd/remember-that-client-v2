@@ -14,6 +14,7 @@ import { fetchUomes } from '../actions/uomes';
 import { fetchReceipts } from '../actions/receipts';
 
 import '../styles/dashboard.css';
+import UOMeTotal from './UOMeTotal';
 
 const mapStateToProps = state => ({
   username: state.auth.currentUser.username,
@@ -39,6 +40,9 @@ export class Dashboard extends React.Component{
         </div>
         <IOUAddForm />
         <UOMeBanner />
+        <div>
+          <UOMeTotal />
+        </div>
       </div>
     );
   }

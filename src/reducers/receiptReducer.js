@@ -1,7 +1,7 @@
 import { TOGGLE_RECEIPT_ADD_FORM, 
   FETCH_RECEIPTS_SUCCESS, 
   POST_RECEIPT_SUCCESS, 
-  DELETE_RECEIPT_SUCCESS } from '../actions/receiptActions';
+  DELETE_RECEIPT_SUCCESS } from '../actions/receipts';
 
 const initState = {
   modalFormView: false,
