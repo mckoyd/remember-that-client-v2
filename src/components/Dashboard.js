@@ -18,6 +18,7 @@ import UOMeTotal from './UOMeTotal';
 import UOMeTable from './UOMeTable';
 import UOMeAddForm from './UOMeAddForm';
 import { ReceiptBanner } from './ReceiptsBanner';
+import ReceiptTotal from './ReceiptTotal';
 
 const mapStateToProps = state => ({
   username: state.auth.currentUser.username,
@@ -49,6 +50,9 @@ export class Dashboard extends React.Component{
         </div>
         <UOMeAddForm />
         <ReceiptBanner />
+        <div className='side-by-side'>
+          <ReceiptTotal />
+        </div>
       </div>
     );
   }
