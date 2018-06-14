@@ -1,5 +1,5 @@
 .iou-table {
-  height: 28vh;
+  height: 23vh;
   overflow-y: auto;
   background-color: #F1FAEE;
   padding: 1em;
@@ -69,5 +69,18 @@ table td {
 @media screen and (min-width: 600px) {
   .iou-table {
     width: 50%;
+    height: 33vh;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .iou-table {
+    height: 49vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .iou-table {
+    height: 33vh;
   }
 }
