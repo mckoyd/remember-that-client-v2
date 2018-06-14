@@ -33,8 +33,8 @@ export const UOMeTable = props => {
       <table>
         <thead className='uome-header'>
           <tr>
-            <th>Who You Owe</th>
-            <th>What You Owe</th>
+            <th>Who Owes You</th>
+            <th>What They Owe</th>
           </tr>
         </thead>
         <tbody>

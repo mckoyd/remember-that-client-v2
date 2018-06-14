@@ -1,34 +1,34 @@
-.uome-table {
+.receipt-table {
   height: 33vh;
   overflow-y: auto;
   background-color: #F1FAEE;
   padding: 1em;
 }
 
-.uome-table::-webkit-scrollbar {
+.receipt-table::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 0.7em;
 }
 
-.uome-table::-webkit-scrollbar-thumb {
+.receipt-table::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background-color: rgba(36, 116, 173, .5);
   -webkit-box-shadow: 0 0 1px rgba(36, 116, 173, .5);
   box-shadow: 0 0 1px rgba(13, 93, 74, .5);
 }
 
-.uome-table table {
+.receipt-table table {
   width: 100%;
-  color: rgb(36, 116, 173);
+  color: #893093;
 }
 
-.uome-header th{
+.receipt-header th{
   padding: 2px;
   font-size: 1.7em;
   width: 50%;
 }
 
-.uome-header {
+.receipt-header {
   border-bottom: 1px dashed black;
 }
 
@@ -46,7 +46,7 @@ table td {
   font-size: 1.3em;
 }
 
-.uome-details-btn, .delete-btn {
+.receipt-details-btn, .delete-btn {
   text-align: right;
   color: #F1FAEE;
   border-radius: 100px;
@@ -55,8 +55,8 @@ table td {
   font-size: 0.7em;
 }
 
-.uome-details-btn {
-  background-color: rgb(36, 116, 173);
+.receipt-details-btn {
+  background-color: #893093;
   margin-bottom: 4px;
 }
 
@@ -66,20 +66,20 @@ table td {
 }
 
 @media screen and (min-width: 600px) {
-  .uome-table {
+  .receipt-table {
     width: 50%;
     height: 41vh;
   }
 }
 
 @media screen and (min-width: 800px) {
-  .uome-table {
+  .receipt-table {
     height: 41vh;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  .uome-table {
+  .receipt-table {
     height: 35vh;
   }
 }

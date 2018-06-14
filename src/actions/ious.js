@@ -45,15 +45,20 @@ export const POST_IOU_SUCCESS = 'POST_IOU_SUCCESS',
   };
 
 export const DELETE_IOU_SUCCESS = 'DELETE_IOU_SUCCESS';
-export const deleteIouSuccess = iou => ({
-  type: DELETE_IOU_SUCCESS, iou
+export const deleteIouSuccess = () => ({
+  type: DELETE_IOU_SUCCESS
+});
+export const STORE_DELETED_IOUS = 'STORE_DELETED_IOUS';
+export const storeDeletedIous = iou => ({
+  type: STORE_DELETED_IOUS, iou
 });
 export const deleteIou = iou => (dispatch, getState) => {
   const authToken = getState().auth.authToken;
+  dispatch(storeDeletedIous(iou));
   fetch(`${API_BASE_URL}/ious/${iou.id}`, {
     method: 'DELETE',
     headers: { Authorization: `Bearer ${authToken}`}
   })
-    .then(iou => dispatch(deleteIouSuccess(iou)))
+    .then(() => dispatch(deleteIouSuccess()))
     .then(() => dispatch(fetchIous()));
 };

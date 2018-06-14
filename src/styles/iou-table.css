@@ -17,7 +17,7 @@
   box-shadow: 0 0 1px rgba(13, 93, 74, .5);
 }
 
-table {
+.iou-table table {
   width: 100%;
   color: rgb(16, 110, 88);
 }

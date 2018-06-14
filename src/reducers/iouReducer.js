@@ -1,7 +1,8 @@
 import { FETCH_IOUS_SUCCESS, 
   TOGGLE_IOU_ADD_FORM, 
   POST_IOU_SUCCESS, 
-  DELETE_IOU_SUCCESS } from '../actions/ious';
+  DELETE_IOU_SUCCESS, 
+  STORE_DELETED_IOUS} from '../actions/ious';
 
 const initState = {
   modalFormView: false,
@@ -28,6 +29,9 @@ export default (state=initState, action) => {
   }
   if(action.type===DELETE_IOU_SUCCESS) {
     return state;
+  }
+  if(action.type===STORE_DELETED_IOUS) {
+    return {...state, deletedIous: [...state.deletedIous, action.iou]};
   }
   return state;
 };

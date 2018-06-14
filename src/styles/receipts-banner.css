@@ -16,7 +16,6 @@
 @media screen and (min-width: 600px){
   .receipt-banner div {
     display: flex;
-    flex-direction: row-reverse;
   }
   .receipt-banner img {
     object-fit: cover;

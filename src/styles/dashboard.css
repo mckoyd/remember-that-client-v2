@@ -4,7 +4,6 @@
     flex-direction: row;
   }
   .alt-row {
-    display: flex;
     flex-direction: row-reverse;
   }
 }
