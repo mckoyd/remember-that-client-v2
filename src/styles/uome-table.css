@@ -1,0 +1,85 @@
+.uome-table {
+  height: 33vh;
+  overflow-y: auto;
+  background-color: #F1FAEE;
+  padding: 1em;
+}
+
+.uome-table::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0.7em;
+}
+
+.uome-table::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(36, 116, 173, .5);
+  -webkit-box-shadow: 0 0 1px rgba(36, 116, 173, .5);
+  box-shadow: 0 0 1px rgba(13, 93, 74, .5);
+}
+
+table {
+  width: 100%;
+  color: rgb(36, 116, 173);
+}
+
+.uome-header th{
+  padding: 2px;
+  font-size: 1.7em;
+  width: 50%;
+}
+
+.uome-header {
+  border-bottom: 1px dashed black;
+}
+
+td:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+table tr {
+  margin-left: 10px;
+}
+
+table td {
+  padding: 5px;
+  font-size: 1.3em;
+}
+
+.uome-details-btn, .delete-btn {
+  text-align: right;
+  color: #F1FAEE;
+  border-radius: 100px;
+  margin: 2px 10px;
+  padding: 0.5em 1em;
+  font-size: 0.7em;
+}
+
+.uome-details-btn {
+  background-color: rgb(36, 116, 173);
+  margin-bottom: 4px;
+}
+
+.delete-btn {
+  background-color: #c41d1d;
+  margin-top: 6px;
+}
+
+@media screen and (min-width: 600px) {
+  .uome-table {
+    width: 50%;
+    height: 41vh;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .uome-table {
+    height: 41vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .uome-table {
+    height: 35vh;
+  }
+}
