@@ -1,5 +1,7 @@
 # Remember THAT App
-## 
+## https://rememberthat.netlify.com/ - App Site (Make sure to use `https`)
+## https://remember-that-server.herokuapp.com/api - Server
+## https://github.com/mckoyd/remember-that-server.git - Github Repo for Server
 ## Description
 
 Remember THAT! is a web application that gives prospective users a platform to keep track of IOU's (who a particular user owes money to), UOMe's (who owes a particular user money), and Receipts (from a particular user collection).  Users can:
