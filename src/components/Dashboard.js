@@ -16,6 +16,7 @@ import { fetchReceipts } from '../actions/receipts';
 import '../styles/dashboard.css';
 import UOMeTotal from './UOMeTotal';
 import UOMeTable from './UOMeTable';
+import UOMeAddForm from './UOMeAddForm';
 
 const mapStateToProps = state => ({
   username: state.auth.currentUser.username,
@@ -45,6 +46,7 @@ export class Dashboard extends React.Component{
           <UOMeTotal />
           <UOMeTable />
         </div>
+        <UOMeAddForm />
       </div>
     );
   }

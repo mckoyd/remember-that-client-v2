@@ -14,10 +14,10 @@ export const UOMeTotal = props => {
     <section className='uome-total'>
       <div>
         <h2>{props.uomeNames.length > 0 ? 
-          `You currently owe $${props.uomeTotal.toLocaleString(undefined,
+          `You are currently owed $${props.uomeTotal.toLocaleString(undefined,
             {'minimumFractionDigits':2,'maximumFractionDigits':2})}`
-          : 'You\'re in the clear.'}<br />
-        {props.uomeNames.length > 0 ? `to ${props.uomeNames.length} ${props.uomeNames.length>1 ? 'people':'person'}.` 
+          : 'No one owes you anything.'}<br />
+        {props.uomeNames.length > 0 ? `from ${props.uomeNames.length} ${props.uomeNames.length>1 ? 'people':'person'}.` 
           : 'Unless you remember something we don\'t.'}<br />
         <button type='button' 
           name='add-form-btn' 
